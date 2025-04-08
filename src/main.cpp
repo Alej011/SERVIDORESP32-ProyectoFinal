@@ -110,6 +110,8 @@ void setup()
   server.on("/riego/off", gestionRiego); // Ruta para apagar riego
   server.on("/abrir/puerta", gestionPuerta);
   server.on("/cerrar/puerta", gestionPuerta);
+  server.on("/modoIA", toggleModoIA);
+
 
   // manejo de cors
   // Manejador global para solicitudes OPTIONS
